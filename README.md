@@ -574,6 +574,86 @@ Activities include the folowing:
 
     sudo systemctl restart nginx
 
+
+7   Monitor system loading using uptime:
+
+
+
    ![alt text](<Images/class project 57.PNG>)
+
+
+8   View disk usage using:
+
+    df -h
+
+9   To check directory size:
+
+    du -sh /home/labuser
+
+10  Display memory usage:
+
+    free -m
+
+   ![alt text](<Images/class project 58.PNG>)
+
+
+11  Display CPU information:
+
+    lscpu
+
+   ![alt text](<Images/class project 59.PNG>)
+
+
+12  To show system uptime and kernel version:
+
+    uname -r && uptime
+
+13  To Monitor running services:
+
+    systemctl list -units --type=service | grep running
+
+
+   ![alt text](<Images/class project 60.PNG>)
+
+14  Create a background process and list it:
+
+    sleep 60 &
+
+    jobs
+
+15  Use 'jobs' and 'fg' to manage background processes
+
+   ![alt text](<Images/class project 61.PNG>)
+
+
+16  To kill a process interactively:
+
+*   launch top
+
+*   find the PID
+
+*   Initiate kill: Press the 'k' key
+
+*   Enter PID
+
+
+    ![alt text](<Images/class project 62.PNG>)
+
+
+17  To log system information output to a file for review:
+
+    free -h > system_info.txt
+
+   ![alt text](<Images/class project 63.PNG>) 
+
+
+18  Use htop (if installed) to explore interactive monitoring:
+
+    sudo apt install htop
+
+    htop
+
+   ![alt text](<Images/class project 64.PNG>)
+
 
 
